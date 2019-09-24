@@ -1,0 +1,90 @@
+Template for instrument metadata files:
+Place metadata file in the appropriate instrument directory under
+/oracle_db/ndsc/meta.  Use a filename that indicates PI and instrument, ie
+mcg_lidar.txt for mcgee's lidar.  Please keep the metadata files up to date.
+
+Data Set Description:
+---- --- ------------
+PI:     Alberto Redondas                 
+Instrument:  Brewer #157              
+Site(s):     Izaña             
+Measurement Quantities: Total Ozone Column (TOC) 
+
+Contact Information:
+------- ------------
+Name:     Alberto Redondas
+Address:  Centro de Investigacion Atmosferica de Izaña, La Marina 20
+Phone:    00-34-922574478
+FAX: 
+Email:    aredondasm@aemet.es     
+
+
+
+Reference Articles:
+--------- ---------
+
+1.Rimmer, J. S., Redondas, A. & Karppinen, T. EuBrewNet – A European Brewer network (COST Action ES1207), an overview. Atmospheric Chemistry and Physics 18, 10347–10353 (2018).
+
+2.León-Luis, S. F. et al. Internal consistency of the Regional Brewer Calibration Centre for Europe triad during the period 2005–2016. Atmospheric Measurement Techniques 11, 4059–4072 (2018).
+
+3.Redondas, A. et al. EUBREWNET RBCC-E Huelva 2015 Ozone Brewer Intercomparison. Atmospheric Chemistry and Physics 18, 9441–9455 (2018).
+
+4.Grobner, J. Traceability for atmospheric total column ozone Short Name: ATMOZ, Project Number: ENV59 Final Publishable Report Traceability for atmospheric total column ozone (ENV59).
+
+5.Redondas, A., Evans, R., Stuebi, R., Köhler, U. & Weber, M. Evaluation of the use of five laboratory determined ozone absorption cross sections in brewer and dobson retrieval algorithms. Atmospheric Chemistry and Physics Discussions 13, 22979–23021 (2013).
+
+6.Kerr, J. B. The Brewer Spectrophotometer. in UV Radiation in Global Climate Change (eds. Gao, W., Slusser, J. R. & Schmoldt, D. L.) 160–191 (Springer Berlin Heidelberg, 2010).
+
+
+
+Instrument Description:
+---------- ------------
+
+Brewer MK-III (double monocromator)
+
+The Brewer spectrophotometer was developed in Canada during the 1970s, and a commercial, automated version became available in the early 1980s. The Brewer spectrophotometer performs measurements of the direct spectral UV irradiances which, through a well-defined process, are used to calculate the TOC value. The Brewer spectrophotometer measures the direct spectral irradiance in six channels in the UV (303.2, 306.3, 310.1, 313.5, 316.8, and 320.14 nm), each with approximately a 0.5 nm bandwidth (resolving power λ/Δλ≈ 600), although that of the shortest wavelength varies with the Brewer model. The spectral analysis is achieved by a holographic grating in combination with a slit mask which selects the channel to be analyzed by a photomultiplier. There are three types of Brewer instruments: the Mk II and Mk IV models are single monochromators, and the Mk III model is a double monochromator, a characteristic that reduces stray light in its measurements.(6) 
+ 
+
+
+Algorithm Description:
+--------- ------------
+
+Brewer Standard algorithm: 
+
+For each ozone value five quasi-simultaneous observations are made. Each observation consists of 20 cycles of quasi-simultaneous measurements of intensity at five of the six UV-wavelengths by fast switching of the spectrometer exit slit mask.
+ 
+The algorithm to retrieve TOC from individual observations is based on differential absorption of ozone at the measured wavelengths. A weighted double ratio, R6(O3), of the measured intensities is calculated and compared to the similar extraterrestrial double ratio, ETC0, determined by the Langley-plot method (2) or by transfer from a travelling reference instrument (3). The weighting coefficients are designed to minimize the effects of aerosols and SO2 spectral absorption. A differential absorption coefficient, α, corresponding to this ratio, is calculated from ozone absorption cross sections (5) convoluted with the slit functions at the measurement wavelengths, and is used to transform the R6(O3)-ETC0 difference into total ozone in the light's path (slant column). To get the vertical total ozone column, O30, the value is further divided by the air mass factor μ
+
+  O3 = (R6(O3) − ETC0) / μ α
+
+See more details in (1) and http://rbcce.aemet.es/dokuwiki/doku.php?id=codes:ozoneproduct
+
+
+
+Expected Precision/Accuracy of the Instrument:
+-------- ------------------ -- --- -----------
+
+In development, see (4)
+
+
+Instrument History:  
+---------- --------
+
+For more details, see (2)
+
+2005-05-31		"Change SL lamp"
+2010-03-01		"Storm"
+2010-09-24		"maintenance IOS10"
+2012-09-05		"Hg replacement"
+2012-10-24		"K&Z maintenance"
+2013-04-30		"Hg replacement"
+2014-02-12		"K&Z maintenance"
+2014-03-17		"Wavelength Calibration"
+2014-06-10		"SL shift"
+2014-09-15		"SL Change Storm"
+2014-12-18		"Hg replacement"
+2015-04-15		"Heater issue"
+2015-06-06		"maintenance  IOS 2015"
+2018-10-17		"Storm"
+2019-04-15      "Power supply fail"
+2019-05-24      "Power supply fix"  
