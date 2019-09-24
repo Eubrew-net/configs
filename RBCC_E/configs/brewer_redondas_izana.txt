@@ -1,8 +1,3 @@
-Template for instrument metadata files:
-Place metadata file in the appropriate instrument directory under
-/oracle_db/ndsc/meta.  Use a filename that indicates PI and instrument, ie
-mcg_lidar.txt for mcgee's lidar.  Please keep the metadata files up to date.
-
 Data Set Description:
 ---- --- ------------
 PI:     Alberto Redondas                 
@@ -13,8 +8,8 @@ Measurement Quantities: Total Ozone Column (TOC)
 Contact Information:
 ------- ------------
 Name:     Alberto Redondas
-Address:  Centro de Investigacion Atmosferica de Izaña, La Marina 20
-Phone:    00-34-922574478
+Address:  Centro de Investigacion Atmosferica de Izaña, La Marina 20, 38180 Spain
+Phone:    
 FAX: 
 Email:    aredondasm@aemet.es     
 
